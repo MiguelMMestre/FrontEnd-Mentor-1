@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    background-color: hsl(185, 75%, 39%);
+    overflow: hidden;
+}
+.top{
+    position: absolute;
+    z-index: -1;
+    background-image: url(images/bg-pattern-top.svg);
+    background-repeat: no-repeat;
+    width: 65vw;
+    height: 65vw;
+    background-size: cover;
+    top: -50%;
+    left: -15%;
+}
+.bottom{
+    position: absolute;
+    z-index: -1;
+    background-image: url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    width: 65vw;
+    height: 65vw;
+    background-size: cover;
+    bottom: -70%;
+    right: -10%;
+}
+@media screen and (max-width: 425px){
+    .top{
+        top: -25%;
+        left: -15%;
+    }
+    .bottom{
+       bottom: -15%;
+       right: 0; 
+    }
+}
+main{
+    width: 17em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: hsl(229, 23%, 23%);
+    background-color: white;
+    overflow: hidden;
+    border-radius: 15px;
+    text-align: center;
+}
+.banner{
+    background-image: url(images/bg-pattern-card.svg);
+    height: 7em;
+}
+.photo{
+    background-image: url(images/image-victor.jpg);
+    background-size: cover;
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    margin: -3em auto;
+    border: 5px solid white;
+}
+.details{
+    padding: 1em 0;
+    font-family: 'Kumbh Sans';
+    margin-top: 3em;
+}
+.name{
+    display: inline;
+    margin: 0;
+    color: hsl(229, 23%, 23%);
+    font-weight: bold;
+}
+span{
+    color: hsl(0, 0%, 59%);
+}
+p{
+    margin-top: 1em;
+    color: hsl(0, 0%, 59%);
+}
+table{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    border-top: 0.5px solid hsl(0, 0%, 59%);
+}
+.faded{
+    font-size: 0.75em;
+    color:hsl(0, 0%, 59%);
+}
+table td{
+    padding: 0 1em;
+}
+.bold{
+    font-weight: bold;
+}
+@media screen and (max-width: 375px){
+    main{
+        width: 75vw;
+    }
+}
